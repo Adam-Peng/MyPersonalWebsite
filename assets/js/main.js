@@ -116,30 +116,19 @@ function init_gmap() {
   setTimeout(function() {
     $('#map').gmap3({
       action: 'init',
-      marker: {
-        address: "Vancouver, BC",
-        options: {
-          icon: new google.maps.MarkerImage("./assets/images/marker.png")
-        }
-      },
       map: {
         options: {
+          center:[49.282729, -123.120738],
           zoom: 10,
           scrollwheel: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          mapTypeId: google.maps.MapTypeId.TERRAIN,
           disableDefaultUI: true,
           draggable: false
         }
       }
     });
-  }, 500);
+  }, 1000);
 }
-
-$(window).load(function() {
-  $('.imgWrapper img').animate({opacity: '1.0'}, 1000, function() {
-    $(this).css('filter', 'none');
-  });
-});
 
 function init_form_validation(){
   $('form button').click(function(e){
@@ -211,7 +200,3 @@ function email_ajax() {
     }
   })
 }}
-
-function printPage(){
-  w=window.open('assets/resume.pdf');
-}
