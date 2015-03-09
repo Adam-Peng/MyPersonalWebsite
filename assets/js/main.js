@@ -44,18 +44,11 @@ function init_btn_open_content() {
     $(this).toggleClass('disabled');
 
     if ($(this).hasClass('disabled')) {
-      $('.img-arrow, #main-content').fadeIn();
+      $('#main-content').fadeIn();
       $('.navigation-list a[href="#about"]').tab('show')
       $("html,body").animate({
         scrollTop: $('#main-content').offset().top
       }, 600, function() {
-      });
-    } else {
-      $("html,body").animate({
-        scrollTop: $('#wrapper').offset().top
-      }, 600, function() {
-        $('.img-arrow, #main-content').fadeOut();
-        $('#open-content').text('About Me');
       });
     }
   });
@@ -172,7 +165,6 @@ function email_ajax() {
   $.ajax({
     url: "email.php",
     type: "post",
-    //dataType:"json",
     data: data,
     error: function (jqXHR, textStatus, errorThrown) {
 
@@ -196,7 +188,6 @@ function email_ajax() {
         alert ("no idea what's going on here");
       }
 
-      //return result;
     }
   })
 }}
