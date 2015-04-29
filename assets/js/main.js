@@ -27,6 +27,17 @@ function init_plugins() {
   $("#navigation").autofix_anything({
     onlyInContainer: true
   });
+  $('.image-popup').magnificPopup({type: 'image', preloader: true});
+  $('.open-popup-link').magnificPopup({type: 'inline', midClick: true});
+
+  $('.popup-iframe').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false
+  });
 }
 
 function init_back_to_top() {
@@ -85,7 +96,7 @@ function init_text_wait() {
 
 function init_check_hash() {
   if (window.location.hash) {
-    var pages = ["#about", "#resume", "#portfolio", "#blog", "#contact"]
+    var pages = ["#about", "#resume", "#portfolio", "#contact"]
     if ($.inArray(window.location.hash, pages) > -1) {
       $('.navigation-list a[href="' + window.location.hash + '"]').tab('show');
       $('#open-content').text($('.navigation-list a[href="' + window.location.hash + '"]').text()).addClass('disabled');

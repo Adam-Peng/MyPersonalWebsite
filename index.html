@@ -34,6 +34,7 @@
     <link href="assets/font/font-awesome.min.css" rel="stylesheet">
     <link href="assets/font/fontello.css" rel="stylesheet">
     <link href="assets/css/animation.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme of Design -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -120,9 +121,26 @@ Start Wrapper Page
                     ===================================-->
                     <nav id='navigation'>
                         <ul class="navigation-list clearfix list-unstyled">
-                            <li class="active"><a href="#about" data-toggle="tab" data-menu="about"><i class="icon-user"></i> <span>About Me</span></a></li>
-                            <li><a href="#resume" data-toggle="tab" data-menu="resume"><i class="icon-newspaper"></i>  <span>Resume</span></a></li>
-                            <li><a href="#contact" data-toggle="tab" data-menu="contact"><i class="icon-mail"></i> <span>Contact</span></a></li>
+                            <li class="active">
+                                <a href="#about" data-toggle="tab" data-menu="about">
+                                    <i class="icon-user"></i><span>About Me</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#resume" data-toggle="tab" data-menu="resume">
+                                    <i class="icon-newspaper"></i><span>Resume</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" data-toggle="tab" data-menu="portfolio">
+                                    <i class="icon-folder-open"></i><span>portfolio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" data-toggle="tab" data-menu="contact">
+                                    <i class="icon-mail"></i> <span>Contact</span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <!-- =========
@@ -516,6 +534,65 @@ Start Wrapper Page
                         <!-- =========
                         End resume tab content section
                         ===================================-->
+                                        <!-- =========
+                        Start portfolio tab content section
+                        ===================================-->
+                        <div id='portfolio' class="tab-pane fade">
+                          <div class="body-content">
+                            <h3 class="title with-icon"><span class="fa fa-briefcase icn-title"></span> My Works</h3>
+
+                            <!-- =========
+                            Start grid postfolio section
+                            ===================================-->
+                            <ul id='portfolio-grid' class="list-unstyled grid-portfolio">
+                                <!-- first portfolio -->
+                              <li class="frame webdesign">
+                                <div class="item-portfolio">
+                                  <a href="#action100" class="preview-portfolio imgWrapper open-popup-link">
+                                    <div class="mask">
+                                        <p class="mask-font">Photograpy Studio</p>
+                                    </div>
+                                    <img src="./assets/images/portfolio/action100_thumb.jpg" alt="" class="img-responsive"/>
+                                  </a>
+                                  <div class="desc-portfolio"><h5>PERSONAL  PROJECT <small>a Web Design</small></h5></div>
+                                </div>
+                                <div id="action100" class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 white-popup mfp-hide">
+                                    <div class="coll-xs-12 col-md-10 col-md-offset-1 link">
+                                        <a href="http://www.action100.com" target="_blank" class="btn btn-default">
+                                            <i class="fa fa-link"></i><em>Action100</em>
+                                        </a>
+                                    </div>
+                                    <img src="./assets/images/portfolio/action100_full.jpg" style="width:100%">
+                                </div>  
+                              </li>
+                                <!-- second portfolio -->
+                              <li class="frame webdesign">
+                                <div class="item-portfolio">
+                                  <a href="#xiaoyaowan" class="preview-portfolio imgWrapper open-popup-link">
+                                    <div class="mask">
+                                        <p class="mask-font">Real Estate</p>
+                                    </div>
+                                    <img src="./assets/images/portfolio/xiaoyaowan_thumb.jpg" alt="" class="img-responsive"/>
+                                  </a>
+                                  <div class="desc-portfolio"><h5>PERSONAL  PROJECT <small>a Web Design</small></h5></div>
+                                </div>
+                                <div id="xiaoyaowan" class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 white-popup mfp-hide">
+                                    <div class="coll-xs-12 col-md-10 col-md-offset-1 link">
+                                        <a href="http://www.xiaoyaobayone.com" target="_blank" class="btn btn-default">
+                                            <i class="fa fa-link"></i><em>Go Live</em>
+                                        </a>
+                                    </div>
+                                    <img src="./assets/images/portfolio/xiaoyaowan_full.jpg" style="width:100%">
+                                </div>  
+                              </li>
+                            </ul>
+                            <!-- =========
+                            End grid postfolio section
+                            ===================================-->
+
+
+                          </div>
+                        </div>
                         <!-- =========
                         Start Contact tab content section
                         ===================================-->
@@ -643,6 +720,7 @@ Javascript load
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="assets/js/jquery.autofix_anything.js"></script>
 <script src='assets/js/gmap3.min.js'></script>
+<script src='assets/js/jquery.magnific-popup.min.js'></script>
 
 <!-- Configuration app js -->
 <script src="assets/js/main.js"></script>
